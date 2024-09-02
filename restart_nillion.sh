@@ -20,5 +20,3 @@ fi
 #latest_block=$(curl -s "https://testnet.nillion.api.explorers.guru/api/v1/blocks?limit=4&cursor=NTE1MjAzOA==&order_by=asc" | jq '.data[0].height')
 echo "latest block ${latest_block}"
 #sleep 10
-
-docker run -d -v /root/nillion/accuser:/var/tmp nillion/retailtoken-accuser:v1.0.0 accuse --rpc-endpoint "https://testnet-nillion-rpc.lavenderfive.com" --block-start ${latest_block}
