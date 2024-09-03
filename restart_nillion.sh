@@ -18,5 +18,5 @@ fi
 
 #somehow in VPS unable to get the latest height, need to create a var and put it in
 #latest_block=$(curl -s "https://testnet.nillion.api.explorers.guru/api/v1/blocks?limit=4&cursor=NTE1MjAzOA==&order_by=asc" | jq '.data[0].height')
-echo "latest block ${latest_block}"
+#echo "latest block ${latest_block}"
 #sleep 10
