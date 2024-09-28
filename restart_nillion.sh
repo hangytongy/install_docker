@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the image names
-IMAGE_NAMES=("nillion/retailtoken-accuser:v1.0.0" "nillion/retailtoken-accuser:v1.0.1")
+IMAGE_NAMES=("nillion/retailtoken-accuser:v1.0.0" "nillion/retailtoken-accuser:v1.0.1" "nillion/verifier:v1.0.0")
 
 for IMAGE_NAME in "${IMAGE_NAMES[@]}"; do
     # List all container IDs using the specified image
